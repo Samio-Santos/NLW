@@ -1,2 +1,2 @@
 # NLW
- Wordshop da Rocketseat 
+ Wordshop - Rocketseat 

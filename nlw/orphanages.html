@@ -3,11 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy</title>
+    <title>Localize um orfanato | Happy</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
     <link rel="icon" href="./images/logo-icon.png" />
+
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/animation.css" />
-    <link rel="stylesheet" href="./css/page-landing.css" />
+    <link rel="stylesheet" href="./css/paga-orphanages.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
@@ -15,35 +26,30 @@
     />
   </head>
   <body>
-    <div id="page-landing">
-      <div id="container">
+    <div id="page-orphanages">
+      <aside class="animate-right">
         <header>
-          <img
-            class="animate-up"
-            id="logo"
-            src="./images/logo.svg"
-            alt="Logomarca de Happy"
-          />
+          <img src="./images/map-marker.svg" alt="Happy" />
 
-          <div class="location animate-up">
-            <strong>São Paulo</strong>
-            <p>Itapecerica da Serra</p>
-          </div>
+          <h2>Escolha um orfanato no mapa</h2>
+          <p>Muitas crianças estão esperando sua visita</p>
         </header>
 
-        <main>
-          <h1 class="animate-up">Leve felicidade para o mundo</h1>
-          <section class="visit">
-            <p class="animate-up">
-              Visite orfanatos e mude o dia de muitas crianças
-            </p>
+        <footer>
+          <strong>São Paulo</strong>
+          <p>Itapecerica da Serra</p>
+        </footer>
+      </aside>
+      <div id="mapid"></div>
 
-            <a href="#" title="Visite orfanatos" class="animate-up"
-              ><img src="./images/arrow.svg" alt="Ir para o mapa"
-            /></a>
-          </section>
-        </main>
-      </div>
+      <a
+        href="create-orphanage.html"
+        class="create-orphanage"
+        title="Cadastre um orfanato"
+        ><img src="./images/plus.svg" alt="Criar orfanato"
+      /></a>
     </div>
+
+    <script src="./scripts/page-orphanages.js"></script>
   </body>
 </html>

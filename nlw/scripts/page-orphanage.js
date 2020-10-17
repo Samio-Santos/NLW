@@ -32,7 +32,8 @@ function selectimage(event) {
   const image = button.children[0];
   const imageContainer = document.querySelector(".orphanage-details > img");
 
-  imageContainer.src = image.src;
+  imageContainer.src = image.src
+  imageContainer.style.objectfit = 'cover'
 
   button.classList.add("active");
 }

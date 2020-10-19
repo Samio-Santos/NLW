@@ -3,7 +3,7 @@ const map = L.map("mapid").setView([-23.7044881, -46.8725772], 15);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
 
 const icon = L.icon({
-  iconUrl: "./images/map-marker.svg",
+  iconUrl: "/images/map-marker.svg",
   iconsize: [58, 68],
   iconAnchor: [29, 68],
 });

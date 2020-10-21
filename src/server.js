@@ -22,3 +22,4 @@ server.get('/create-orphanage', pages.createOrphanage)
 
 //ligar o servidor
 server.listen(5500)
+

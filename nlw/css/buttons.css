@@ -6,13 +6,14 @@
   cursor: pointer;
   background: #3cdc8c;
 
-  border-radius: 2rem;
+  border-radius: 1rem;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.2s;
   outline: none;
+  text-decoration: none;
 }
 
 .primary-button:hover {
@@ -42,9 +43,9 @@
 }
 
 .button-select button:first-child {
-  border-radius: 2rem 0 0 2rem;
+  border-radius: 1rem 0 0 1rem;
 }
 
 .button-select button:last-child {
-  border-radius: 0 2rem 2rem 0;
+  border-radius: 0 1rem 1rem 0;
 }

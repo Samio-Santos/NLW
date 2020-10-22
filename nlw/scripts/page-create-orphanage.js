@@ -94,4 +94,7 @@ function toggleSelect(event) {
 //     event.preventDefaut()
 //     alert('Selecione um ponto no mapa')
 //   }
+//   else {
+//     return needsLatandLng = false
+//   }
 // }

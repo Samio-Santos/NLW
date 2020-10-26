@@ -10,7 +10,7 @@ const server = express()
 .use(express.urlencoded({ extended: true }))
 
 //utilizando os arquivos estaticos
-server.use(express.static('nlw'))
+server.use(express.static('public'))
 
 //configurar o temaplate engine
 .set('views', path.join(__dirname, 'views'))
